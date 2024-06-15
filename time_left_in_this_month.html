@@ -33,7 +33,33 @@
             display: inline-block;
             margin-right: 10px;
         }
+        
+        /* Light mode */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #fff;
+            }
+        }
 
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+
+            #days {
+                background-color: #1b6e70;
+            }
+
+            #hours {
+                background-color: #66bb6a;
+            }
+
+            #minutes {
+                background-color: #a33a20;
+            }
+        }
 
     </style>
 </head>
