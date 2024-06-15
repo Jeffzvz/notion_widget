@@ -85,17 +85,8 @@
 		function navigate(id) {
 			if (id == 'GitHub')
 				window.open("https://github.com/Jeffzvz?tab=repositories", '_blank').focus();
-			else if (id == 'June') {
-				let isNotionApp = navigator.userAgent.includes("Notion");
-				let notionUrl = "https://www.notion.so/6-3a435ea29e8d49c7aeb184650155e3c5";
-				let notionAppUrl = "notion://www.notion.so/6-3a435ea29e8d49c7aeb184650155e3c5";
-
-				if (isNotionApp) {
-					window.location.href = notionAppUrl;
-				} else {
-					window.location.href = notionUrl;
-				}
-			}
+			else if (id == 'June') 
+				window.open("https://www.notion.so/6-3a435ea29e8d49c7aeb184650155e3c5", '_blank').focus();
 		}
 	</script>
 </body>
