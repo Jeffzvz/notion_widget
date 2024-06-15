@@ -42,39 +42,17 @@
 			color: #d09c0b;
 		}
 
-		/* Light mode styles */
-		@media (prefers-color-scheme: light) {
-			body {
-				background-color: #ece5f0;
-			}
-		}
-
-		/* Dark mode styles */
-		@media (prefers-color-scheme: dark) {
-			body {
-				background-color: #1e1e1e;
-				color: #ffffff;
-			}
-
-			.navMenu {
-				border-color: #444444;
-			}
-
-			.navMenu a {
-				color: #ffffff;
-			}
-
-			.navMenu a:hover {
-				color: #d09c0b;
-			}
+		/* Fixed light mode styles */
+		body {
+			background-color: #ece5f0;
 		}
 	</style>
 </head>
 
 <body>
 	<nav class="navMenu border">
-		<a id="GitHub" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-poo"></i> GitHub</a>
-		<a id="June" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-hippo"></i> June</a>
+		<a id="GitHub" onclick="navigate(this.id)" href="#"> <i class="fa-light fa-poo"></i> GitHub</a>
+		<a id="June" onclick="navigate(this.id)" href="#"> <i class="fa-light fa-hippo"></i> June</a>
 	</nav>
 
 	<script>
