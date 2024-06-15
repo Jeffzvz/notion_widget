@@ -41,9 +41,31 @@
 			color: #d09c0b;
 		}
 
-		/* Fixed light mode styles */
-		body {
-			background-color: #ece5f0;
+		/* Light mode styles */
+		@media (prefers-color-scheme: light) {
+			body {
+				background-color: #ece5f0;
+			}
+		}
+
+		/* Dark mode styles */
+		@media (prefers-color-scheme: dark) {
+			body {
+				background-color: #1e1e1e;
+				color: #ffffff;
+			}
+
+			.navMenu {
+				border-color: #444444;
+			}
+
+			.navMenu a {
+				color: #ffffff;
+			}
+
+			.navMenu a:hover {
+				color: #d09c0b;
+			}
 		}
 	</style>
 </head>
@@ -64,7 +86,7 @@
 			if (id == 'GitHub')
 				window.open("https://github.com/Jeffzvz?tab=repositories", '_blank').focus();
 			else if (id == 'June')
-				window.location.href = "notion://www.notion.so/6-3a435ea29e8d49c7aeb184650155e3c5"
+				window.location.href = "notion://www.notion.so/6-3a435ea29e8d49c7aeb184650155e3c5";
 		}
 	</script>
 </body>
